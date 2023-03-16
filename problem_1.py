@@ -1,12 +1,63 @@
-n = [5, 1, 2, 1, 4]
+n = [5, 1, 2, 1, 4,]
 
-#print(target)#
+uniqueList = []
+duplicateList = []
 
 for i in n:
-    for j in n:
-        if i==j & n.index(i) != n.index(j):
-            print("index: ", n.index(i), "number: ",i) 
-            break
-    else:
-        continue  # print("None")  only executed if the inner loop did NOT break
-    break
+    if i not in uniqueList:
+        uniqueList.append(i)
+    elif i not in duplicateList:
+        duplicateList.append(i)
+print(duplicateList)
+
+
+n = [4, 1, 2]
+
+uniqueList = []
+duplicateList = []
+
+for i in n:
+    if i not in uniqueList:
+        uniqueList.append(i)
+    elif i not in duplicateList:
+        duplicateList.append(i)
+print(duplicateList)
+
+
+n = []
+
+uniqueList = []
+duplicateList = []
+
+for i in n:
+    if i not in uniqueList:
+        uniqueList.append(i)
+    elif i not in duplicateList:
+        duplicateList.append(i)
+print(duplicateList)
+
+
+
+n = [6, 2, 5, 2, 6, 2]
+
+uniqueList = []
+duplicateList = []
+
+for i in n:
+    if i not in uniqueList:
+        uniqueList.append(i)
+    elif i not in duplicateList:
+        duplicateList.append(i)
+print(duplicateList)
+
+n = [42, 42, 42, 42]
+
+uniqueList = []
+duplicateList = []
+
+for i in n:
+    if i not in uniqueList:
+        uniqueList.append(i)
+    elif i not in duplicateList:
+        duplicateList.append(i)
+print(duplicateList)
